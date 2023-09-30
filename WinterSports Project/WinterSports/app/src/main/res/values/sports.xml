@@ -1,0 +1,18 @@
+<resources>
+    <string name="b11">Biathlon</string>
+    <string name="b12">Bobsleigh</string>
+    <string name="b13">Alpine Skiing</string>
+    <string name="b21">Curling</string>
+    <string name="b22">Speed Skating</string>
+    <string name="b23">Biathlon Combined</string>
+    <string name="b31">Cross\nCountry Skiing</string>
+    <string name="b32">Nordic Combined</string>
+    <string name="b33">Skeleton</string>
+    <string name="b41">Snowboarding</string>
+    <string name="b42">Figure Skating</string>
+    <string name="b43">Freestyle Skiing</string>
+    <string name="b51">Ice Hockey</string>
+    <string name="b52">Short Track Speed Skating</string>
+    <string name="b53">Relay Race</string>
+
+</resources>

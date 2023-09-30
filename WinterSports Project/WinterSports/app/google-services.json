@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "465201975222",
+    "project_id": "asdasd-52527",
+    "storage_bucket": "asdasd-52527.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:465201975222:android:c51f4f4b590fd50fe6fb17",
+        "android_client_info": {
+          "package_name": "com.sport.wintersports"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCi077C_zBcy9w4p5_DWd49yU-rfj8OZY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
