@@ -1,0 +1,84 @@
+{
+    "questions": [
+    {
+    "question": "The longest recorded rally in a tennis match lasted for 29 minutes.",
+    "answer": true
+    },
+    {
+    "question": "Tennis balls were originally black in color.",
+    "answer": true
+    },
+    {
+    "question": "The fastest serve in tennis history reached a speed of 163 miles per hour (263 kilometers per hour).",
+    "answer": true
+    },
+    {
+    "question": "Tennis was originally played with bare hands.",
+    "answer": true
+    },
+    {
+    "question": "The largest tennis racket ever made was 10 feet (3 meters) in length.",
+    "answer": true
+    },
+    {
+    "question": "A professional tennis match once took place on top of a moving train.",
+    "answer": true
+    },
+    {
+    "question": "The first game of tennis was played in a monastery courtyard.",
+    "answer": true
+    },
+    {
+    "question": "The highest recorded number of tennis balls held in one hand is 22.",
+    "answer": true
+    },
+    {
+    "question": "Tennis was originally called 'sticky wicket' before adopting its current name.",
+    "answer": false
+    },
+    {
+    "question": "The largest tennis court ever built was the size of six standard courts.",
+    "answer": true
+    },
+    {
+    "question": "A tennis match once took place on an aircraft carrier deck.",
+    "answer": true
+    },
+    {
+    "question": "The longest recorded match of tennis lasted for 11 days.",
+    "answer": false
+    },
+    {
+    "question": "The first tennis balls were filled with feathers.",
+    "answer": true
+    },
+    {
+    "question": "The first tennis racket was made of solid wood.",
+    "answer": true
+    },
+    {
+    "question": "Tennis was once an Olympic event for synchronized pairs.",
+    "answer": false
+    },
+    {
+    "question": "The first official tennis tournament was held in a ballroom.",
+    "answer": true
+    },
+    {
+    "question": "Tennis was originally played with a square-shaped ball.",
+    "answer": false
+    },
+    {
+    "question": "The highest recorded number of tennis balls caught in one minute is 12.",
+    "answer": true
+    },
+    {
+    "question": "Tennis was banned in some countries for being too 'distracting.'",
+    "answer": true
+    },
+    {
+    "question": "The first tennis net was made of silk threads.",
+    "answer": false
+    }
+    ]
+    }

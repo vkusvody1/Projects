@@ -53,4 +53,9 @@ public class MenuActivity extends AppCompatActivity {
         intent  = new Intent(MenuActivity.this, SportsActivity.class);
         startActivity(intent);
     }
+
+    public void onClickButton3(View view) {
+        intent  = new Intent(MenuActivity.this, GuessActivity.class);
+        startActivity(intent);
+    }
 }

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">All About Tennis</string>
+    <string name="true1">TRUE</string>
+    <string name="false1">FALSE</string>
+    <string name="menubt1">ABOUT TENNIS</string>
+    <string name="menubt2">CHECK YOUR KNOWLEDGE</string>
+</resources>

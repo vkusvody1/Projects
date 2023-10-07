@@ -8,41 +8,7 @@
     android:layout_height="match_parent"
     tools:context=".FlexActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.4"
-            android:background="@drawable/arrow"
-            android:onClick="Btn2"
-            android:rotation="90"
-            android:scaleX="0.8"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView11"
-            android:layout_width="0dp"
-            android:gravity="center"
-            android:textColor="@color/white"
-            android:textSize="30dp"
-            android:textStyle="bold|italic"
-            android:layout_height="match_parent"
-            android:layout_weight="2"
-            android:text="" />
-
-        <TextView
-            android:id="@+id/textView14"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.4"
-            android:text="" />
-    </LinearLayout>
 
 
 
@@ -50,8 +16,8 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginHorizontal="20sp"
+        android:layout_marginVertical="30sp"
         android:background="@drawable/textbg"
         android:orientation="vertical">
 
@@ -59,20 +25,9 @@
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="6"
-            android:scrollbars="none">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    tools:srcCompat="@tools:sample/avatars" />
+            android:layout_margin="5dp"
+            android:layout_weight="15"
+            android:scrollbars="vertical">
 
                 <TextView
                     android:id="@+id/texttrain"
@@ -86,19 +41,15 @@
                     android:textSize="30dp"
                     android:textStyle="bold" />
 
-
-            </LinearLayout>
         </ScrollView>
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="4dp"
-            android:layout_weight="0.4"
-            android:background="@drawable/arrow"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:onClick="Btn"
-            android:scaleX="0.1" />
+            android:scaleX="0.1"
+            android:background="@drawable/arrow" />
     </LinearLayout>
-
-
 </LinearLayout>

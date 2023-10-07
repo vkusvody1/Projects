@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg"
+    android:gravity="center"
+    tools:context=".StepsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15sp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ramka"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvStepsProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold"
+            android:text="Steps walked: 0"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvCalories"
+            android:textColor="@color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic|bold"
+            android:text="Calories: 0"
+            android:textSize="18sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etSteps"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:hint="@string/Inputsteps"
+                android:layout_weight="1"
+                android:inputType="number" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:textColor="@color/white"
+                android:id="@+id/btnSave"
+                android:background="@drawable/bg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/saveb" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="42dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:textColor="@color/white"
+            android:background="@drawable/bg2"
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="@string/resbutton" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="10000"
+            android:progress="0" />
+    </LinearLayout>
+
+</LinearLayout>

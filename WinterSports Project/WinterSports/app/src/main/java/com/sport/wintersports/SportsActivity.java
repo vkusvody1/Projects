@@ -148,4 +148,9 @@ public class SportsActivity extends AppCompatActivity {
         intent.putExtra("URL", url);
         startActivity(intent);
     }
+    @Override
+    public void onBackPressed () {
+            intent = new Intent(SportsActivity.this, MenuActivity.class);
+            startActivity(intent);
+    }
 }

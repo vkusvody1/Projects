@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "975232144983",
+    "project_id": "fitnesshelper-28024",
+    "storage_bucket": "fitnesshelper-28024.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:975232144983:android:5dac3ab1dfb52290d8f512",
+        "android_client_info": {
+          "package_name": "com.sport.fitnesshelper"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2mlFCr1GnyBY8f465Oa9p33HyTIk2jyI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

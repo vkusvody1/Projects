@@ -1,25 +1,25 @@
 package com.sport.wintersports;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.drawable.Drawable;
 import android.os.AsyncTask;
+import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
-import android.graphics.drawable.Drawable;
-import android.os.Bundle;
 import android.widget.ScrollView;
 import android.widget.TextView;
+import com.squareup.picasso.Picasso;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.target.CustomTarget;
@@ -30,7 +30,6 @@ import org.json.JSONException;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.util.Calendar;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -46,6 +45,7 @@ public class FlexActivity extends AppCompatActivity {
     TextView textTrain;
     Button btn;
     ScrollView scrollView;
+    ImageView imageView;
     Intent intent;
     @SuppressLint("MissingInflatedId")
     @Override
@@ -92,28 +92,7 @@ public class FlexActivity extends AppCompatActivity {
             e.printStackTrace();
         }
     }
-    private class DownloadImageTask extends AsyncTask<String, Void, Bitmap> {
-        ImageView gImage;
-        public DownloadImageTask(ImageView gImage) {
-            this.gImage = gImage;
-        }
 
-        protected Bitmap doInBackground(String... urls) {
-            String urldisplay = urls[0];
-            Bitmap ico = null;
-            try {
-                InputStream in = new java.net.URL(urldisplay).openStream();
-                ico = BitmapFactory.decodeStream(in);
-            } catch (Exception e) {
-                Log.e("Error", e.getMessage());
-                e.printStackTrace();
-            }
-            return ico;
-        }
-        protected void onPostExecute(Bitmap result) {
-            gImage.setImageBitmap(result);
-        }
-    }
     void run() throws IOException {
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
@@ -134,8 +113,7 @@ public class FlexActivity extends AppCompatActivity {
                         try {
                             arr = new JSONArray(myResponse);
                             textTrain.setText(arr.getJSONObject(0).optString("text"));
-                            new DownloadImageTask((ImageView) findViewById(R.id.imageView))
-                                    .execute(arr.getJSONObject(0).optString("img"));
+//                            Picasso.get().load(arr.getJSONObject(0).optString("img")).into(imageView);
 
                         } catch (JSONException e) {
                             e.printStackTrace();
@@ -157,5 +135,15 @@ public class FlexActivity extends AppCompatActivity {
     public void Btn(View v) {
         btn.setLayoutParams(new LinearLayout.LayoutParams(0,0));
         scrollView.setOnTouchListener(null);
+    }
+    @Override
+    public void onBackPressed () {
+        if (hach.equals("rules")) {
+            intent = new Intent(FlexActivity.this, MenuActivity.class);
+            startActivity(intent);
+        } else {
+            intent = new Intent(FlexActivity.this, SportsActivity.class);
+            startActivity(intent);
+        }
     }
 }

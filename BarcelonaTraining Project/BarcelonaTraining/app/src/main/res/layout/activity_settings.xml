@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background3"
+    android:orientation="vertical"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/SetLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/logo"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:layout_margin="30dp"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textColor="@color/bar3"
+        android:textStyle="bold|italic"
+        android:gravity="center"
+        android:textSize="50sp"
+        android:text="@string/title_activity_settings" />
+
+    <Switch
+        android:id="@+id/setswitch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textStyle="bold|italic"
+        android:textSize="25sp"
+        android:layout_margin="20dp"
+        android:text="@string/SetSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Button
+        android:id="@+id/cleardata"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_weight="1"
+        android:background="@drawable/emptybutton"
+        android:gravity="start|center"
+        android:onClick="onClick"
+        android:text="@string/SetBtn"
+        android:textColor="@color/orange"
+        android:textSize="25sp"
+        android:textStyle="bold|italic" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="18" />
+
+</LinearLayout>

@@ -114,7 +114,7 @@ public class LoadActivity extends AppCompatActivity {
 
     // обработка ответа
     private void handleResponse(String result) {
-        if (result.equals("https://example.com")) {
+        if (result.equals("https://youtube.com")) {
             intent = new Intent(LoadActivity.this, WebViewActivity.class);
             String url = result;
             intent.putExtra("URL", url);

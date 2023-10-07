@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">BarcelonaTraining</string>
+    <string name="EditTextHintButton1">ИМЯ</string>
+    <string name="EditTextHintButton2">РОСТ</string>
+    <string name="EditTextHintButton3">ВЕС</string>
+    <string name="DataTextView1">ПОЗНАКОМИМСЯ\nВВЕДИТЕ ДАННЫЕ</string>
+    <string name="DataButtonText">НАЧАТЬ</string>
+    <string name="MenuBT1">ПЛАН ТРЕНИРОВКИ</string>
+    <string name="MenuBT2">ВЫПОЛНЕННЫЙ ПЛАН</string>
+    <string name="MenuBT3">ВОПРОСЫ</string>
+    <string name="MenuBT4">НАСТРОЙКИ</string>
+    <string name="logo"><font fgcolor='#A50044'>Barcelona</font><font fgcolor='#004D98'>Training</font></string>
+    <string name="MenuTextBot">ЦЕЛЬ НА ДЕНЬ:\n<font fgcolor='#A50044'>100</font> POINTS</string>
+    <string name="Progress">ПРОГРЕСС: <font fgcolor='#A50044'>50</font> POINTS</string>
+    <string name="TrainTV1">ТРЕНИРОВКА</string>
+    <string name="TrainTV2">ВНЕСИТЕ ВЫПОЛНЕННЫЕ\nУПРАЖНЕНИЯ</string>
+    <string name="TrainTV3">УДАРЫ: 1Х</string>
+    <string name="TrainBT">ВНЕСТИ</string>
+    <string name="TrainET1">РАССТОЯНИЕ (КМ)</string>
+    <string name="TrainET2">ПРИСЕДАНИЯ (РАЗ)</string>
+    <string name="title_activity_settings">НАСТРОЙКИ</string>
+    <string name="SetSwitch"><font fgcolor='#A50044'>УВЕДОМЛЕНИЯ</font></string>
+    <string name="SetBtn"><font fgcolor='#A50044'>ОЧИСТИТЬ\n ДАННЫЕ</font></string>
+    <string name="qstHint">Какой должен быть пульс\nпри ускорениях?</string>
+    <string name="qstTv">ВОПРОС\nТРЕНЕРУ</string>
+    <string name="qstOtvet">ОТВЕТ:</string>
+    <string name="test">u can train by yourself</string>
+    <string-array name="days_of_week">
+        <item>ВОСКРЕСЕНЬЕ</item>
+        <item>ПОНЕДЕЛЬНИК</item>
+        <item>ВТОРНИК</item>
+        <item>СРЕДА</item>
+        <item>ЧЕТВЕРГ</item>
+        <item>ПЯТНИЦА</item>
+        <item>СУББОТА</item>
+    </string-array>
+
+
+</resources>

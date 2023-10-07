@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "4085086239",
+    "project_id": "solotraining-bc732",
+    "storage_bucket": "solotraining-bc732.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4085086239:android:45d1ab90291097c15f3d2a",
+        "android_client_info": {
+          "package_name": "com.sport.solotraining"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdPZM8Ia9kZ7F-LrRl_aJSii9CuitPH1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

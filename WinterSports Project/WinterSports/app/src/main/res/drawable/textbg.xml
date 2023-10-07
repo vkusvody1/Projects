@@ -6,9 +6,12 @@
             <corners android:radius="25dip" />
             <gradient
                 android:angle="90"
-                android:centerColor="#40ffffff"
-                android:endColor="#40bdcbff"
-                android:startColor="#40bdcbff" />
+                android:centerColor="#3E9C9B9B"
+                android:endColor="#A9BDCBFF"
+                android:startColor="#A89C9B9B" />
+            <stroke
+                android:width="2dp"
+                android:color="@color/black" />
         </shape>
     </item>
 </selector>

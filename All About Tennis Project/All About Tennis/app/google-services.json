@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "55023683289",
+    "project_id": "allaboutennis-5b3a0",
+    "storage_bucket": "allaboutennis-5b3a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:55023683289:android:857c96ec6f50641dd9e0c8",
+        "android_client_info": {
+          "package_name": "com.sport.allabouttennis"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaN-bzqp7fXAF4swnoSDnK8WMqkR8SyhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

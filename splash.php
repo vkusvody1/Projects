@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $unique = $_POST['unique'];
 
     $responses = array(
-        "https://example.com",
+        "https://youtube.com",
         "no",
         "nopush"
     );
