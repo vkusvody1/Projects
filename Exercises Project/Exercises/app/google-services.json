@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526418615116",
+    "project_id": "worko-4b3d1",
+    "storage_bucket": "worko-4b3d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526418615116:android:8a4a22864d04eaee9c4de9",
+        "android_client_info": {
+          "package_name": "com.sport.workouts"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwcryBdyfymHgrEKDPvy2LX96q6N-jxuM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

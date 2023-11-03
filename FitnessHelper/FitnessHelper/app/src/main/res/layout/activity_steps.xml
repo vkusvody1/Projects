@@ -24,6 +24,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
+            style="@style/CustomFontStyle"
             android:textStyle="italic|bold"
             android:text="Steps walked: 0"
             android:textSize="18sp" />
@@ -31,6 +32,7 @@
         <TextView
             android:id="@+id/tvCalories"
             android:textColor="@color/white"
+            style="@style/CustomFontStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textStyle="italic|bold"
@@ -53,6 +55,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="@color/white"
                 android:textColorHint="@color/white"
+                style="@style/CustomFontStyle"
                 android:hint="@string/Inputsteps"
                 android:layout_weight="1"
                 android:inputType="number" />
@@ -64,6 +67,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:textColor="@color/white"
+                style="@style/CustomFontStyle"
                 android:id="@+id/btnSave"
                 android:background="@drawable/bg2"
                 android:layout_width="wrap_content"
@@ -79,6 +83,7 @@
 
         <androidx.appcompat.widget.AppCompatButton
             android:textColor="@color/white"
+            style="@style/CustomFontStyle"
             android:background="@drawable/bg2"
             android:id="@+id/btnReset"
             android:layout_width="wrap_content"

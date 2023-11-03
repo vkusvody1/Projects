@@ -38,6 +38,7 @@
                 android:gravity="center"
                 android:text="sss"
                 android:textColor="@color/white"
+                style="@style/CustomFontStyle"
                 android:textScaleX="0.6"
                 android:textSize="30dp"
                 android:textStyle="bold" />

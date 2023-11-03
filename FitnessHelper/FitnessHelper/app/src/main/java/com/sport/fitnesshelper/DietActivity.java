@@ -1,90 +1,117 @@
 package com.sport.fitnesshelper;
 
-import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.sport.fitnesshelper.list_classes.State;
-import com.sport.fitnesshelper.list_classes.StateAdapter;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 
 public class DietActivity extends AppCompatActivity {
+    private TextView caloriesTextView;
+    private Button addButton;
+    private Button clearButton;
+    private RecyclerView recyclerView;
 
-    ArrayList<State> states = new ArrayList<State>();
-    ArrayList<String> arr = new ArrayList<String>();
-    int score = 0;
-    TextView textView;
+    private int totalCalories = 0;
+    private ArrayList<FoodItem> foodItems = new ArrayList<>();
+    private FoodAdapter foodAdapter;
+
+    private SharedPreferences sharedPreferences;
+    private Gson gson = new Gson();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_diet);
-        textView = findViewById(R.id.textView);
 
+        caloriesTextView = findViewById(R.id.caloriesTextView);
+        addButton = findViewById(R.id.addButton);
+        clearButton = findViewById(R.id.clearButton);
+        recyclerView = findViewById(R.id.recyclerView);
+
+        // Настройка RecyclerView
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        foodAdapter = new FoodAdapter(foodItems);
+        recyclerView.setAdapter(foodAdapter);
+
+        sharedPreferences = getSharedPreferences("MyPrefs", MODE_PRIVATE);
+
+        loadSavedData();
+
+        addButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(DietActivity.this, AddActivity.class);
+                startActivityForResult(intent, 1);
+            }
+        });
+
+        clearButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                totalCalories = 0;
+                foodItems.clear();
+                updateCaloriesDisplay();
+                foodAdapter.notifyDataSetChanged();
+                saveData();
+            }
+        });
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        states = new ArrayList<State>();
-        RecyclerView recyclerView = findViewById(R.id.list);
-        StateAdapter adapter = new StateAdapter(this, states);
-        recyclerView.setAdapter(adapter);
-        arr = getArrayList("arr");
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
 
-        if (arr != null) {
-            for (String s : arr) {
-                String[] words = s.split("_");
-                setInitialData(words[0],words[1],words[2],words[3] + " Kilocalories");
-                score += Integer.parseInt(words[3]);
+        if (requestCode == 1) {
+            if (resultCode == RESULT_OK) {
+                String name = data.getStringExtra("name");
+                int calories = data.getIntExtra("calories", 0);
+
+                FoodItem foodItem = new FoodItem(name, calories);
+                foodItems.add(foodItem);
+                totalCalories += calories;
+
+                updateCaloriesDisplay();
+                foodAdapter.notifyDataSetChanged();
+                saveData();
             }
         }
-
-        textView.setText(score + "Kilocalories");
     }
 
-    public void setInitialData(String uri, String date, String name,String kkal){
-        states.add(new State (uri,date,name,kkal));
+    private void updateCaloriesDisplay() {
+        caloriesTextView.setText("Calories: " + totalCalories);
     }
 
-    public void saveArrayList(ArrayList<String> list, String key){
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        SharedPreferences.Editor editor = prefs.edit();
-        Gson gson = new Gson();
-        String json = gson.toJson(list);
-        editor.putString(key, json);
+    private void saveData() {
+        SharedPreferences.Editor editor = sharedPreferences.edit();
+        String json = gson.toJson(foodItems);
+        editor.putString("foodItems", json);
+        editor.putInt("totalCalories", totalCalories);
         editor.apply();
-
     }
 
-    public ArrayList<String> getArrayList(String key){
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        Gson gson = new Gson();
-        String json = prefs.getString(key, null);
-        Type type = new TypeToken<ArrayList<String>>() {}.getType();
-        return gson.fromJson(json, type);
-    }
+    private void loadSavedData() {
+        String json = sharedPreferences.getString("foodItems", null);
+        Type type = new TypeToken<ArrayList<FoodItem>>() {}.getType();
+        ArrayList<FoodItem> savedFoodItems = gson.fromJson(json, type);
 
+        if (savedFoodItems != null) {
+            foodItems.addAll(savedFoodItems);
+        }
 
-    public void onCLick1(View v) {
-        Intent intent = new Intent(DietActivity.this, AddActivity.class);
-        startActivity(intent);
-    }
-    public void onCLick2(View v) {
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        prefs.edit().clear().commit();
-        finish();
-        startActivity(getIntent());
+        totalCalories = sharedPreferences.getInt("totalCalories", 0);
+
+        updateCaloriesDisplay();
     }
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "62212229219",
+    "project_id": "hockeyguide-34561",
+    "storage_bucket": "hockeyguide-34561.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:62212229219:android:620ed3e7825fd9c6289056",
+        "android_client_info": {
+          "package_name": "com.sport.hockeyguide"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUXua61ZmhwJd0Iepdhh8PHmcrC0tlxCI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

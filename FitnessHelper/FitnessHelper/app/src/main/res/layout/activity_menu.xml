@@ -26,6 +26,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:textColor="@color/white"
+                style="@style/CustomFontStyle"
                 android:background="@drawable/bg2"
                 android:id="@+id/button1"
                 android:layout_width="match_parent"
@@ -42,6 +43,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:textColor="@color/white"
+                style="@style/CustomFontStyle"
                 android:background="@drawable/bg2"
                 android:id="@+id/button2"
                 android:layout_width="match_parent"
@@ -58,6 +60,7 @@
 
             <androidx.appcompat.widget.AppCompatButton
                 android:textColor="@color/white"
+                style="@style/CustomFontStyle"
                 android:background="@drawable/bg2"
                 android:id="@+id/button3"
                 android:layout_width="match_parent"

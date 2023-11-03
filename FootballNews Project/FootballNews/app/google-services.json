@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345526012090",
+    "project_id": "footballnews-b6041",
+    "storage_bucket": "footballnews-b6041.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345526012090:android:998cd5c5947c3098f71a83",
+        "android_client_info": {
+          "package_name": "com.sport.footballnews"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUxTRkyyPR_h-uXaSM0iN2JRw4veOd9uM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

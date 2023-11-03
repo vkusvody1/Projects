@@ -24,21 +24,23 @@
             android:orientation="vertical">
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/nameEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ramka"
                 android:ems="10"
+                style="@style/CustomFontStyle"
                 android:hint="  Food"
                 android:inputType="textPersonName"
                 android:textColorHint="@color/white" />
 
             <EditText
-                android:id="@+id/editTextNumber"
+                android:id="@+id/caloriesEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/ramka"
                 android:ems="10"
+                style="@style/CustomFontStyle"
                 android:hint="  Count of KCal"
                 android:inputType="number"
                 android:textColorHint="@color/white" />
@@ -50,7 +52,7 @@
             android:orientation="vertical">
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button228"
+                android:id="@+id/doneButton"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_marginLeft="50dp"
@@ -58,9 +60,25 @@
                 android:layout_marginRight="50dp"
                 android:layout_marginBottom="10dp"
                 android:layout_weight="0.3"
+                style="@style/CustomFontStyle"
                 android:background="@drawable/bg2"
                 android:onClick="onClick"
-                android:text="Сохранить"
+                android:text="Save"
+                android:textColor="@color/white" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancelButton"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="0.3"
+                style="@style/CustomFontStyle"
+                android:background="@drawable/bg2"
+                android:onClick="onClick"
+                android:text="Cancel"
                 android:textColor="@color/white" />
         </LinearLayout>
 

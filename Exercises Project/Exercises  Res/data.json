@@ -1,0 +1,110 @@
+{
+    "legs": [
+      {
+        "header": "\nSquats: ",
+        "img": "http://116.203.114.103/Exercises/leg_exercise1.gif",
+        "text": "Stand with your feet shoulder-width apart. Lower your body by bending your knees and pushing your hips back, then return to the starting position."
+      },
+      {
+        "header": "\nLunges: ",
+        "img": "http://116.203.114.103/Exercises/leg_exercise2.gif",
+        "text": "Stand with your feet together, then step forward with one leg and lower your body until both knees are bent at a 90-degree angle. Return to the starting position and switch legs."
+      },
+      {
+        "header": "\nLeg Press: ",
+        "img": "http://116.203.114.103/Exercises/leg_exercise3.gif",
+        "text": "Sit on the leg press machine and push the weight up, extending your legs. Slowly return to the starting position."
+      },
+      {
+        "header": "\nCalf Raises: ",
+        "img": "http://116.203.114.103/Exercises/leg_exercise4.gif",
+        "text": "Stand with your feet flat on the ground and raise your heels, then lower them back down."
+      },
+      {
+        "header": "\nHamstring Curls: ",
+        "img": "http://116.203.114.103/Exercises/leg_exercise5.gif",
+        "text": "Lie face down on the machine and curl your legs up towards your glutes, then slowly lower them back down."
+      }
+    ],
+    "back": [
+      {
+        "header": "\nPull-ups: ",
+        "img": "http://116.203.114.103/Exercises/back_exercise1.gif",
+        "text": "Hang from a bar with your hands slightly wider than shoulder-width apart. Pull yourself up until your chin is above the bar, then lower yourself back down."
+      },
+      {
+        "header": "\nDumbbell Rows: ",
+        "img": "http://116.203.114.103/Exercises/back_exercise2.gif",
+        "text": "Hold a dumbbell in each hand, hinge at the hips, and row the weights up towards your chest, then lower them back down."
+      },
+      {
+        "header": "\nLat Pulldowns: ",
+        "img": "http://116.203.114.103/Exercises/back_exercise3.gif",
+        "text": "Sit at a lat pulldown machine, grip the bar wider than shoulder-width, and pull it down to your chest, then release it slowly."
+      },
+      {
+        "header": "\nDeadlifts: ",
+        "img": "http://116.203.114.103/Exercises/back_exercise4.gif",
+        "text": "Stand with your feet hip-width apart, grip a barbell, push your hips back, and lift the barbell up, then lower it back down."
+      },
+      {
+        "header": "\nBent Over Barbell Rows: ",
+        "img": "http://116.203.114.103/Exercises/back_exercise5.gif",
+        "text": "Hold a barbell, bend at the hips, and row the barbell up towards your chest, then lower it back down."
+      }
+    ],
+    "arms": [
+      {
+        "header": "\nBicep Curls: ",
+        "img": "http://116.203.114.103/Exercises/arm_exercise1.gif",
+        "text": "Hold dumbbells in each hand, curl them up towards your shoulders, then lower them back down."
+      },
+      {
+        "header": "\nTricep Dips: ",
+        "img": "http://116.203.114.103/Exercises/arm_exercise2.gif",
+        "text": "Sit on a bench, place your hands next to your hips, and lift your body off the bench. Lower yourself down by bending your elbows, then push back up."
+      },
+      {
+        "header": "\nHammer Curls: ",
+        "img": "http://116.203.114.103/Exercises/arm_exercise3.gif",
+        "text": "Hold dumbbells in each hand with your palms facing inwards. Curl them up towards your shoulders, then lower them back down."
+      },
+      {
+        "header": "\nTricep Pushdowns: ",
+        "img": "http://116.203.114.103/Exercises/arm_exercise4.gif",
+        "text": "Stand at a cable machine with a straight bar attachment, push the bar down, then release it slowly."
+      },
+      {
+        "header": "\nWrist Curls: ",
+        "img": "http://116.203.114.103/Exercises/arm_exercise5.gif",
+        "text": "Sit on a bench with your forearms resting on your thighs, hold a dumbbell in each hand, and curl your wrists up and down."
+      }
+    ],
+    "core": [
+      {
+        "header": "\nPlank: ",
+        "img": "http://116.203.114.103/Exercises/core_exercise1.gif",
+        "text": "Lie face down with your forearms on the ground. Lift your body off the ground, keeping your body in a straight line from head to heels."
+      },
+      {
+        "header": "\nRussian Twists: ",
+        "img": "http://116.203.114.103/Exercises/core_exercise2.gif",
+        "text": "Sit on the ground, lean back slightly, lift your feet off the ground, and twist your torso to the left and right, touching the ground on each side."
+      },
+      {
+        "header": "\nLeg Raises: ",
+        "img": "http://116.203.114.103/Exercises/core_exercise3.gif",
+        "text": "Lie flat on your back, lift your legs up towards the ceiling, then lower them back down without letting them touch the ground."
+      },
+      {
+        "header": "\nBicycle Crunches: ",
+        "img": "http://116.203.114.103/Exercises/core_exercise4.gif",
+        "text": "Lie on your back, lift your legs, and perform a bicycle pedaling motion while bringing your opposite elbow to your knee."
+      },
+      {
+        "header": "\nMountain Climbers: ",
+        "img": "http://116.203.114.103/Exercises/core_exercise5.gif",
+        "text": "Start in a plank position, bring one knee towards your chest, then switch legs in a running motion."
+      }
+    ]
+}

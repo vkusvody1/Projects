@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40647849553",
+    "project_id": "runningtracker-d4348",
+    "storage_bucket": "runningtracker-d4348.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40647849553:android:d2d24aa4e7f7ce6d8c2a70",
+        "android_client_info": {
+          "package_name": "com.sport.runningtracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBIMNmy5r75q4z7g9jrGu0MgNLGPMCLOhk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

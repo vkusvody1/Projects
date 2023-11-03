@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Workouts</string>
+    <string name="text2">Here you can chose training type, \n and then start your own workout!</string>
+    <string name="text1">Hello, friend!</string>
+</resources>

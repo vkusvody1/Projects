@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "538365815812",
+    "project_id": "chicago-bulls-87aed",
+    "storage_bucket": "chicago-bulls-87aed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:538365815812:android:c7f1aff3c8395ee5535951",
+        "android_client_info": {
+          "package_name": "com.sport.chicagobulls"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvVTd4_KAUlxokBYzehGHSQIofqmgUX1E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
