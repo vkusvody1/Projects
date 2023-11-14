@@ -1,0 +1,58 @@
+[
+	{
+		"header": "№1 - Game",
+		"about": "Basketball is a team sport played between two teams of five players each. The objective is to score points by shooting a ball through the opponent's hoop."
+	},
+	{
+		"header": "№2 - Play Area & Equipment",
+		"about": "2.1 - Court\nBasketball is played on a rectangular court with specific dimensions. It features a hoop at each end.\n2.2 - Ball\nThe game uses a spherical ball made of leather or synthetic material."
+	},
+	{
+		"header": "№3 - Number of Players",
+		"about": "A standard basketball team consists of five players on the court at any given time. Substitutions are allowed during stoppages in play."
+	},
+	{
+		"header": "№4 - Player Roles & Positions",
+		"about": "Players are typically assigned positions such as point guard, shooting guard, small forward, power forward, and center, each with specific responsibilities on the court."
+	},
+	{
+		"header": "№5 - Rules of the Game",
+		"about": "5.1 - Scoring\nPoints are scored by successfully shooting the ball through the opponent's hoop.\n5.2 - Dribbling\nPlayers must dribble (continuously bounce) the ball while moving.\n5.3 - Passing\nPassing the ball to teammates is a crucial aspect of gameplay."
+	},
+	{
+		"header": "№6 - Violations & Fouls",
+		"about": "6.1 - Traveling\nMoving without dribbling the ball is a violation.\n6.2 - Double Dribble\nStopping and then restarting dribbling is a violation.\n6.3 - Personal Fouls\nPhysical contact beyond the rules is considered a foul."
+	},
+	{
+		"header": "№7 - Free Throws",
+		"about": "Free throws are awarded after certain fouls and are taken from the free-throw line. They are uncontested shots at the hoop."
+	},
+	{
+		"header": "№8 - Three-Point Line",
+		"about": "Shots made from beyond the three-point line are worth three points instead of the usual two."
+	},
+	{
+		"header": "№9 - Shot Clock",
+		"about": "A shot clock limits the time a team has to attempt a shot. If the shot is not taken in time, the opposing team gains possession."
+	},
+	{
+		"header": "№10 - Rebounding",
+		"about": "Securing possession of the ball after a missed shot is crucial for maintaining offensive opportunities."
+	},
+	{
+		"header": "№11 - Defense",
+		"about": "Defensive players aim to prevent the offensive team from scoring by blocking shots, stealing the ball, and forcing turnovers."
+	},
+	{
+		"header": "№12 - Timeouts",
+		"about": "Coaches can call timeouts to provide instructions to their team or to give players a rest during the game."
+	},
+	{
+		"header": "№13 - Overtime",
+		"about": "If the score is tied at the end of regular play, overtime periods are played to determine the winner."
+	},
+	{
+		"header": "№14 - Substitutions",
+		"about": "Coaches can make substitutions during stoppages in play to replace players on the court."
+	}
+]

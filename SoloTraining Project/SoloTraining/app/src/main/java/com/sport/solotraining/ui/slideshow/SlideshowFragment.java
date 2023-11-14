@@ -41,7 +41,7 @@ public class SlideshowFragment extends Fragment {
     public View onStartView() {
 
 
-        public class MainActivity extends AppCompatActivity {
+        public class SlideshowFragment extends AppCompatActivity {
 
             private List<Exercise> exerciseList = new ArrayList<>();
             private ExerciseAdapter exerciseAdapter;
